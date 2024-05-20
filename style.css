@@ -1,0 +1,121 @@
+
+*{font-family: Verdana, Geneva, Tahoma, sans-serif ; font-size: 100%;}
+.wrapper {display: flex; 
+    flex-flow: 
+    row wrap;
+    text-align: center;
+    width: 100%;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/%C5%A0koda_Auto_Mlad%C3%A1_Boleslav.jpg/2560px-%C5%A0koda_Auto_Mlad%C3%A1_Boleslav.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover; ;
+}
+
+.wrapper>*{
+    padding: 10px;
+    margin: 10px;
+    flex: 1 100%;
+    border-radius: 10px;
+    background-color: aliceblue;
+}
+
+    
+h1 {text-align: center; color: white;}
+h2 {text-align: center;}
+
+.footer {
+    background: gray;
+    height: 80px;
+    
+}
+
+main {
+    text-align: left;
+    background: deepskyblue;
+    height: 300px;
+    font-size:  24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   
+
+}
+
+
+
+@media all and (min-width: 800px){
+    .main{ flex: 3;}
+    .aside1{order: 1;}
+    .aside2 {order: 2;}
+    .main {order: 2;}
+    .footer {order: 4;}
+    li {float: none;}
+    
+}
+@media all and (min-width: 600px){
+.aside1 {flex: 1;}
+.aside2 {flex: 1;}
+
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0.6em;
+    margin: 0em;
+    text-align: center;
+
+}
+nav ul li a{
+    display:block;
+    background-color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 11em;
+    padding-right: 11em;
+    color: rgb(0, 0, 0);
+    
+ }
+
+ a:hover {
+    background-color: #ccc; 
+  }
+  .menu2 li {float: left;}
+
+  .menu2 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  .menu2 li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 5px 16px;
+  text-decoration: none;
+  background-color: black;
+}
+.menu2 a:hover {
+    background-color: #3a3a3a; 
+  }
+
+
+.článek {text-align: left;
+    display: flex; 
+    flex-flow: 
+    row wrap;
+    flex-direction: column;
+}
+article {text-align: left;}
+img {padding: 10px; }
+.kamaradi {flex: 1;
+    margin: 10px;
+    padding: 20px;}
+.pomoc {display: flex; flex-direction: row;}
+@media screen and (max-width:800px) {
+    .pomoc {flex-direction: column;}
+}
